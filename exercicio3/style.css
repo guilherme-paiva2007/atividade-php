@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.font-ubuntu {
+    font-family: Ubuntu, 'Courier New', Courier, monospace;
+}
+
+.blue, .blue * {
+    --main: var(--blue);
+    --mainVar1: var(--blueVar1);
+    --mainVar2: var(--blueVar2);
+    --mainVar3: var(--blueVar3);
+    --mainVar4: var(--blueVar4);
+    --mainFilter1: var(--blueFilter1);
+    --mainFilter2: var(--blueFilter2);
+    --mainFilter3: var(--blueFilter3);
+}
+
+.orange, .orange * {
+    --main: var(--orange);
+    --mainVar1: var(--orangeVar1);
+    --mainVar2: var(--orangeVar2);
+    --mainVar3: var(--orangeVar3);
+    --mainVar4: var(--orangeVar4);
+    --mainFilter1: var(--orangeFilter1);
+    --mainFilter2: var(--orangeFilter2);
+    --mainFilter3: var(--orangeFilter3);
+}
+
+* {
+    font-family: "Rubik", 'Times New Roman', Times, serif;
+    transition: 0.1s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: black;
+    color: black;
+}
+
+main {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 2rem 4rem;
+    background-color: var(--main);
+}
+
+footer {
+    background-color: var(--mainFilter2);
+    padding: 2rem 4rem;
+}
+
+.center-block {
+    width: 50vw;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(var(--mainFilter3) 20%, var(--mainFilter2) 90%);
+    padding: 1.6rem;
+    border-radius: 16px;
+}
+
+form input, form label, form select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input, form select {
+    padding: 0.3em;
+    margin: 0.2em;
+    margin-bottom: 0.6em;
+    height: 2.3em;
+    border-radius: 0.4rem;
+    border: 0;
+    outline: none;
+}
+
+form *:not(option) {
+    color: white;
+}
+
+form option {
+    color: black;
+}
+
+form *:invalid, form *:placeholder-shown {
+    background-color: var(--redFilter3);
+}
+
+form *:not(option, button):valid {
+    color: black;
+}
+
+form option:not(form option:first-child) {
+    background-color: white;
+}
+
+form button {
+    margin: 0.8em auto;
+    font-size: 1rem;
+    padding: 0.3em 0.8em;
+    border: 3px solid var(--blackFilter2);
+    border-radius: 0.4rem;
+    background-color: var(--grey);
+    transition: 0.2s;
+}
+
+form button:hover, form button:focus {
+    background-color: var(--redVar3);
+}
+
+input:valid ~ input:valid ~ input:valid ~ select:valid ~ button {
+    background-color: var(--spring);
+}
+
+input:valid ~ input:valid ~ input:valid ~ select:valid ~ button:hover, 
+input:valid ~ input:valid ~ input:valid ~ select:valid ~ button:focus {
+    background-color: var(--springVar2);
+}
+
+form input::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+.big-warn {
+    font-size: 2.5rem;
+    color: red;
+    text-align: center;
+}
+
+@media (max-width: 720px) {
+    .center-block {
+        width: 100vw;
+    }
+}
