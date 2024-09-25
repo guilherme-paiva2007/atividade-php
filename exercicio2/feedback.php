@@ -56,6 +56,29 @@
         .submit-btn:hover {
             background-color: #45a049;
         }
+
+        @media (max-width: 768px) {
+    #all {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (mobile) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    input, button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
     </style>
 </head>
 <body>

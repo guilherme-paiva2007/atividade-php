@@ -145,8 +145,25 @@ form input::-webkit-calendar-picker-indicator {
     text-align: center;
 }
 
-@media (max-width: 720px) {
-    .center-block {
-        width: 100vw;
+@media (max-width: 768px) {
+    #all {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (mobile) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    input, button {
+        font-size: 12px;
+        padding: 8px;
     }
 }

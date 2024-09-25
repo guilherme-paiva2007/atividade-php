@@ -33,6 +33,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             text-align: left;
             margin-top: 20px;
         }
+
+        @media (max-width: 768px) {
+    #all {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (mobile) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    input, button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
     </style>
 </head>
 <body>

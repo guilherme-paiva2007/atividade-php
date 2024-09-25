@@ -86,17 +86,25 @@ button:active {
     transform: translateY(0px);
 }
 
-/* Estilos de responsividade */
 @media (max-width: 768px) {
     #all {
-        padding: 30px;
+        padding: 15px;
+        width: 90%;
     }
 
+    input, button {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (mobile) */
+@media (max-width: 480px) {
     h2 {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 
-    button, input {
-        font-size: 0.9rem;
+    input, button {
+        font-size: 12px;
+        padding: 8px;
     }
 }
