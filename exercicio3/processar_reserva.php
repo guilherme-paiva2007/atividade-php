@@ -22,16 +22,23 @@
         <link rel="stylesheet" href="./theme.css">
     </head>
     <body class="orange">
-        <header></header>
+        <header>
+            <ul id="links">
+                <li id="novaReserva"><a href="./reserva.php">Nova Reserva</a></li>
+                <li id="menu"><a href="../menu/index.html">Menu</a></li>
+            </ul>
+        </header>
         <main>
-            <section class="center-block">
+            <section class="center-block" id="reservation-info">
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-                    echo "Nome: $request_name <br>";
-                    echo "Data: $request_date <br>";
-                    echo "Horário: $request_hour <br>";
-                    echo "Sala: $request_room <br>";
+                    echo "<h1>Reserva registrada</h1>";
+                    echo "<p><span>Nome:</span> $request_name </p>";
+                    echo "<p><span>Data:</span> $request_date </p>";
+                    echo "<p><span>Horário:</span> $request_hour </p>";
+                    echo "<p><span>Sala:</span> $request_room </p>";
                 } else {
+                    echo "<h1>Erro</h1>";
                     echo "<p class='big-warn font-ubuntu'>$error</p>";
                 }
                 ?>

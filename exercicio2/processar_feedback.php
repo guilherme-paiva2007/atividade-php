@@ -12,51 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Recebido</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-            text-align: center;
-        }
-        .feedback-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        .feedback-info {
-            text-align: left;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 768px) {
-    #all {
-        padding: 15px;
-        width: 90%;
-    }
-
-    input, button {
-        font-size: 14px;
-    }
-}
-
-/* Responsividade para telas muito pequenas (mobile) */
-@media (max-width: 480px) {
-    h2 {
-        font-size: 18px;
-    }
-
-    input, button {
-        font-size: 12px;
-        padding: 8px;
-    }
-}
-    </style>
+    <link rel="stylesheet" href="./processar_feedback.css">
 </head>
 <body>
 

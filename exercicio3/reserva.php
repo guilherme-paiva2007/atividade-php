@@ -9,7 +9,9 @@
     </head>
     <body class="blue">
         <header>
-
+            <ul id="links">
+                <li id="menu"><a href="../menu/index.html">Menu</a></li>
+            </ul>
         </header>
         <main>
             <form action="./processar_reserva.php" method="post" class="center-block">

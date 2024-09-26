@@ -34,6 +34,7 @@ h1 {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.2s;
+    text-align: center;
 }
 
 .box:hover {
@@ -51,6 +52,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin: 50px;
+    transition: 0.3s;
 }
 
 .integrante img {
@@ -70,4 +72,29 @@ h1 {
     margin-top: 10px;
     font-size: 16px;
     color: #333;
+}
+
+@media (max-width: 420px) {
+    h1 {
+        margin: 0.6em 0;
+    }
+    .menu-container, .integrantes-container {
+        flex-direction: column;
+    }
+    .menu-container {
+        margin: 1em;
+    }
+    .integrantes-container {
+        margin: 0;
+        gap: 1em;
+    }
+    .box {
+        height: 3em;
+    }
+    .integrante {
+        margin: 0;
+    }
+    .integrante:hover {
+        transform: scale(1.1);
+    }
 }
