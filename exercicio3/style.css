@@ -52,7 +52,7 @@ main {
 header {
     position: sticky;
     top: 0;
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
     background-color: var(--main);
 }
 
@@ -90,6 +90,7 @@ form input, form select {
     border-radius: 0.4rem;
     border: 0;
     outline: none;
+    width: 100%;
 }
 
 form *:not(option) {
@@ -139,14 +140,82 @@ form input::-webkit-calendar-picker-indicator {
     filter: invert(100%);
 }
 
+#reservation-info {
+    background-image: linear-gradient(var(--mainFilter3) 20%, var(--mainFilter2) 90%);
+    padding: 1.6rem;
+    border-radius: 16px;
+    color: white;
+}
+
+#reservation-info h1 {
+    text-align: center;
+}
+
+#reservation-info span {
+    padding: 2px;
+    background-color: white;
+    color: black;
+    width: 4em;
+    display: inline-block;
+    text-align: end;
+}
+
+#links {
+    list-style-type: none;
+    display: grid;
+    grid-template-areas: "novaReserva void menu";
+    grid-template-columns: 3fr 10fr 2fr;
+    padding: 0;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4em;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+#links a:hover {
+    background-color: var(--whiteFilter2);
+}
+
+#menu {
+    margin-left: auto;
+    grid-area: menu;
+}
+
+#novaReserva {
+    grid-area: novaReserva;
+}
+
 .big-warn {
     font-size: 2.5rem;
     color: red;
     text-align: center;
 }
 
+@media (min-width: 720px) {
+    header {
+        padding-left: 4em;
+        padding-right: 8em;
+    }
+}
+
 @media (max-width: 720px) {
     .center-block {
         width: 100vw;
+    }
+    #links {
+        grid-template-columns: 3fr 3fr 2fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .center-block {
+        box-sizing: border-box;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        max-width: none;
     }
 }

@@ -1,0 +1,66 @@
+*:not(input, select, textarea) {
+    color: white;
+}
+h1{
+    display: flex;
+    justify-content: center;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    background: rgb(0,198,166);
+    background: radial-gradient(circle, rgba(0,198,166,1) 51%, rgba(81,255,133,1) 95%);
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

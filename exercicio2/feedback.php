@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback do Produto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./feedback.css">
 </head>
 <body>
 
@@ -29,7 +29,9 @@
         <textarea id="comentario" name="comentario" rows="4" required></textarea>
         <span class="error" id="comentarioError">Por favor, insira um comentário.</span>
 
-        <button type="submit" class="submit-btn">Enviar Feedback</button>
+        <div id="button-container">
+            <button type="submit" class="submit-btn">Enviar Feedback</button>
+        </div>
     </form>
 
     <script>

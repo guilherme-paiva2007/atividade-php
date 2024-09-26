@@ -31,6 +31,7 @@ h2 {
     max-width: 500px;
     width: 100%;
     transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
 }
 
 #all:hover {
@@ -86,17 +87,29 @@ button:active {
     transform: translateY(0px);
 }
 
-/* Estilos de responsividade */
 @media (max-width: 768px) {
-    #all {
-        padding: 30px;
-    }
-
     h2 {
-        font-size: 1.8rem;
+        margin: 1em;
     }
 
-    button, input {
-        font-size: 0.9rem;
+    body {
+        flex-direction: column;
+    }
+
+    #all {
+        padding: 15px;
+        /* width: 90%; */
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (mobile) */
+@media (max-width: 480px) {
+    input, button {
+        font-size: 12px;
+        padding: 8px;
     }
 }
