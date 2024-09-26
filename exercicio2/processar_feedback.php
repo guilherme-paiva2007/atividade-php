@@ -12,28 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Recebido</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-            text-align: center;
-        }
-        .feedback-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        .feedback-info {
-            text-align: left;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="processar.css">
 </head>
 <body>
 
